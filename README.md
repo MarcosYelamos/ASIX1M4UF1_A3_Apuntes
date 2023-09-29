@@ -33,3 +33,21 @@ Este texto esta en __*negrita y cursiva*__. __ * * __
     * Cuarto submenú
 + Quinta opción de lista desordenada
 + Sexta opción de lista desordenada
+
+Hay que dejar un espacio en blanco para que siga en otra linea 
+
+``` 
+Las tres tildes sirven para encuadrar.
+<html>
+    <head> 
+    </head>
+    <body>
+        <p>Esto es un parrrafo</p>
+    </body>
+</html>
+```
+
+[Esto es un enlace](https://www.google.com/url?sa=i&url=https%3A%2F%2Finhispania.com%2Fes%2F15-formas-de-decir-si-sin-decir-si%2F&psig=AOvVaw19IUwh4EM0mAYLZhS421Tp&ust=1696059558183000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCOik266oz4EDFQAAAAAdAAAAABAD "Enlace a si")
+
+
+

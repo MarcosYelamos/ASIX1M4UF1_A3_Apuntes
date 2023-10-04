@@ -56,4 +56,4 @@ Las tres tildes sirven para encuadrar.
 |Col 2 es|Centrada|35€|
 |Col 3 es|Derecha|134€|
 |Estilo Cebra|Gris|Blanco|
-|CLase|ASIX1|M4|
+|Clase|ASIX1|M4|

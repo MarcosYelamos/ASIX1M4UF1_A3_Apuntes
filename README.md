@@ -23,6 +23,7 @@ Este texto esta en __*negrita y cursiva*__. __ * * __
 2. Segunda opción de menu.
 3. Tercera opción de menu.
 
+(La lista desordenada se hace con el - y con *)
 * Primera opción de lista desordenada
 * Segunda opción de lista desordenada
 - Tercera opción de lista desordenada

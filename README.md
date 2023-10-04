@@ -59,5 +59,7 @@ Las tres tildes sirven para encuadrar.
 |Clase|ASIX1|M4|
 
 -[ ]Opción A
+
 -[X]Opción B
+
 -[ ]Opción C

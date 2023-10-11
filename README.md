@@ -94,6 +94,8 @@ Partes de un documento HTML
 Etiqueta por la cual le de
 
 html:5 para añadir al archivo las partes de un documento html.
+
+
 ```
 <!DOCTYPE html> (Le decimos al docuemnto que tipo de documento es)
 
@@ -101,12 +103,12 @@ html:5 para añadir al archivo las partes de un documento html.
 
 </html> Es el cierre de la etiqueta anterior. Despues de esta etiuqeta no se pone codigo.
 
-encabezado --> <head> </head> (Va al principio de la pagina es la parte donde definimos las caracetristicas de la pagina y donde metemos todo el contenido no visible por los visitantes.)
+encabezado --> <head> </head> (Va al principio de la pagina es la parte donde definimos las caracetristicas de la pagina y donde metemos todo el contenido no visible por los visitantes. Enlaces)
 
 
 <meta charset="UTF-8"> que set de caracteres tiene que cojer la pagina, en este caso coje el que utilizamos, con la ñ añadida por ejemplo.
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> Como se ve a ver la pantalla 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> Como se ve a ver el ancho de la pantalla.
 
 <title>Document</title> Es el titulo de la pagina. en la pestaña del navegador se vera lo quese ponga
 
@@ -123,4 +125,52 @@ Etiquetas de linea: Cuando se acaba de renderizar la etiqueta __NO__ hace un sal
 
 ```
 h1 --> encabezado, tiene 6 niveles, cambian segun el numero, el 1 es el mas grande.
+
+ol --> Lista ordenada
+    li --> va dentro de la lista ordenada para definir cada elemento.
+Ej:
+<ol>
+    <li>Primer elemento</li>
+    <li>Segundo elemento</li>
+    <li>Tercer elemento</li>
+</ol>
+
+ul --> Lista desordenada, lo mismo que la orenadda pero que con u.
+Ej:
+<ul>
+    <li>Primer elemento</li>
+    <li>Segundo elemento</li>
+    <li>Tercer elemento</li>
+</ul>
+
+Tambien se pueden meter listas dentro de otras
+Ej:
+<ol>
+    <li>Primer elemento de nvl 1</li>
+    <ul>
+        <li>Primer elemento de nivel 2</li>
+        <li>Segundo elemento de nivel 2</li>
+        <li>Tercer elemento de nivel 2</li>
+    </ul>
+    <li>Segundo elemento de nvl 1</li>
+    <li>Tercer elemento de nvl 1</li>
+</ol>
+
+<a href=""></a> --> para hacer links, en href se pone el link de la ruta donde se quiere llegar.
+Ej:
+<a href="http://google.com" alt ="Texto alternativo" target="_blank">Este es el enlace a google</a>
+
+alt: es el texto alternativo que sale cuand pasas por encima.
+
+target blank: abre una pestaña nueva con el enlace
+
+blockquote --> para poner una cita, te lo escribe a la derecha un poco, el texto.
+
+<!-- Ajajajajajajajaj esto es un coemntario--> --> esto es para poner comentarios jajajajajaja.
+Siempre comentar los codigos que escribamos.
 ```
+## Estructura de los contenidos
+
+Carpetas para cada tipo de elementos, comouna carpeta img para las fotos, otra para audios...
+
+## Rutas

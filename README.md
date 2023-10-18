@@ -170,6 +170,8 @@ blockquote --> para poner una cita, te lo escribe a la derecha un poco, el texto
 Siempre comentar los codigos que escribamos.
 
 <img src="" alt=""> --> para poner -> las imagenes, en src se pone el encale o la ruta y el alt es el texto alternativo. Los nombres de laas imaganes que  no tengan espacios.
+
+<strong> para poner en negrita u texto y <u> para subrayarlo.
 ```
 
 <br>
@@ -196,14 +198,9 @@ imagenes es a la primera carpeta a al que nos dirigimos y ./planeta.jpg es el ar
 <h3 id="tercera">Tercera seccion</h3> --> para añadir un identificador y asi por ejemplo poder hacer un elnace a u titulo.
 para ir a un titulo y no cambiar a otra pagina hay que añadir anttes del la ruta un #.
 
-
-
-
-
-
-
-
-
-
-
 ```
+
+## Pages
+
+Para hacer que un repositorio de github se transforme en pagina web iremso a configuracion (settings) en el menu de la izqeuirda pages.
+Seleccionamos la rama(Branch) Main y le damos a guardar (save)

@@ -42,7 +42,7 @@ Este texto esta en __*negrita y cursiva*__. __ * * __
 Hay que dejar un espacio en blanco para que siga en otra linea 
 
 ``` 
-Las tres tildes sirven para encuadrar.
+Las tres tildes(```) sirven para encuadrar.
 <html>
     <head> 
     </head>
@@ -168,9 +168,12 @@ blockquote --> para poner una cita, te lo escribe a la derecha un poco, el texto
 
 <!-- Ajajajajajajajaj esto es un coemntario--> --> esto es para poner comentarios jajajajajaja.
 Siempre comentar los codigos que escribamos.
+
+<img src="" alt=""> --> para poner -> las imagenes, en src se pone el encale o la ruta y el alt es el texto alternativo.
 ```
 ## Estructura de los contenidos
 
 Carpetas para cada tipo de elementos, comouna carpeta img para las fotos, otra para audios...
 
-## Rutas
+## FOnt awesome
+Reelnar con lo del scripot y  la web para ponerel iciono.

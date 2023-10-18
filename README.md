@@ -169,11 +169,41 @@ blockquote --> para poner una cita, te lo escribe a la derecha un poco, el texto
 <!-- Ajajajajajajajaj esto es un coemntario--> --> esto es para poner comentarios jajajajajaja.
 Siempre comentar los codigos que escribamos.
 
-<img src="" alt=""> --> para poner -> las imagenes, en src se pone el encale o la ruta y el alt es el texto alternativo.
+<img src="" alt=""> --> para poner -> las imagenes, en src se pone el encale o la ruta y el alt es el texto alternativo. Los nombres de laas imaganes que  no tengan espacios.
 ```
+
+<br>
+
+## Font awesome
+Rellenar con lo de script para poder poner los iconos de Font Awsome. Una vez copiado el script en la cabecera solo habra que copiar el codigo del icono y saldria por pantalla.
+
+<br>
+
 ## Estructura de los contenidos
 
 Carpetas para cada tipo de elementos, comouna carpeta img para las fotos, otra para audios...
+. --> indica el sitio deonde te encuentras, es decir en el mismo sitio donde estas.
+.. Tira para atras, es decir va a la carpeta anterior.
+Ej: ./imagenes/planeta.jpg 
+.  es la carpeta actual
+imagenes es a la primera carpeta a al que nos dirigimos y ./planeta.jpg es el archivo que elegimmos (en este caso una foto).
 
-## FOnt awesome
-Reelnar con lo del scripot y  la web para ponerel iciono.
+<br>
+
+## Identificador
+
+```
+<h3 id="tercera">Tercera seccion</h3> --> para añadir un identificador y asi por ejemplo poder hacer un elnace a u titulo.
+para ir a un titulo y no cambiar a otra pagina hay que añadir anttes del la ruta un #.
+
+
+
+
+
+
+
+
+
+
+
+```

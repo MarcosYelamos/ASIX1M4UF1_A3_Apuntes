@@ -277,9 +277,73 @@ Selector universal, sirve para seleccionar todo, es este: *. si pusieramos un es
 
 Hay prioridad tambien en el css, el que esta mas arriba es el que primero lee.
 
+Si ponemos el css en el head de la misa pagina van dentrode una etiqueta style:
+
+h1,h2 {
+    color: Blueviolet
+}
+
+
+
 ## CSS
 Enlacar un css con el html:
 Ponemos un link en el html con el tipo de hoja de estilos que apunta a la ruta donde esta situada y  le decimos el tipo de datos que va a haber.
 <link rel="stylesheet" href="./css/estilos.css" type ="text/css">
 
-Selector de hijo:
+
+
+Selector de hijo: Podemos afectar a un elemento que esta dentro de otro, pero solo un nivel por debajo.
+
+        li > strong {
+            color: blueviolet;
+        }
+
+Esto de arriba afectaria a esto de abajo:
+<ol>
+    <li><strong>200g</strong> de chocolate negro</li>
+    <li><strong>150g</strong> de mantequilla</li>
+    <li><strong>150g</strong> de azúcar</li>
+    <li>3 huevos</li>
+    <li>150g de harina</li>
+    <li>1 cucharadita de polvo de hornear</li>
+    <li>Una pizca de sal</li>
+</ol>
+
+<br>
+<br>
+
+Por ejemplo esto:
+
+    p > strong {
+         color: blueviolet;
+    }
+
+
+
+No afectaria a esto:
+<p>Para preparar un delicioso <span><strong>pastel de chocolate</strong></span>, sigue estos pasos:</p>
+
+<br>
+<br>
+Selector de descendientes:
+Esto afectaria a cualquier strong que se encuentre dentro de un parrafo, da igual si es un hijo o no.
+
+    p strong {
+        color: blueviolet;
+    }
+
+
+
+Cambiar la letra del texto:
+Para cambiar la letra del texto iremos a la pagina web de google fonts y una vez hemos escojido la fuente que queremos deberemos copiar el link que se vera algo asi:
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap" rel="stylesheet">
+<br>
+Y una vez puesto el link habra que poner o en el head del html o en una hoja externa la fuente dentro de la etiqtea en la cual la queremos usar, por ejemplo:
+
+    <style>
+        p {
+            font-family: 'Edu TAS Beginner', cursive;
+        }
+    </style>

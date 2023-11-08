@@ -200,7 +200,86 @@ para ir a un titulo y no cambiar a otra pagina hay que añadir anttes del la rut
 
 ```
 
+
 ## Pages
 
 Para hacer que un repositorio de github se transforme en pagina web iremso a configuracion (settings) en el menu de la izqeuirda pages.
 Seleccionamos la rama(Branch) Main y le damos a guardar (save)
+## HTML tabla
+Como se hace una tabla en HTML?
+
+Con la etiqueta <Table>, <Thead>, tbody y <Tfoot>
+
+border es para ponerle borde a la tabla.
+<table border="1"> 
+        <thead>
+            <tr>
+                <th>Puesto</th>
+                <th>Atleta</th>
+                <th>Tiempo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1r</td>
+                <td>Juan</td>
+                <td>2:00</td>
+            </tr>
+            <tr>
+                <td>2rd</td>
+                <td>Juan</td>
+                <td>3:00</td>
+            </tr>
+            <tr>
+                <td>3th</td>
+                <td>Pepe</td>
+                <td>4:00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Puesto</th>
+                <th>Atleta</th>
+                <th>Tiempo</th>
+            </tr>
+        </tfoot>
+</table>
+<br>
+
+
+
+## Tercer capítulo: CSS
+
+Para organizar y estilar las paginas.
+Dos opciones:
+Meter directamente el css en la etiqueta, en el head o en un archivo externo enlacado con la página.
+
+Directamente en la etiqueta cuando solamente quereemos afectar a un elemnto en concreto.
+EN el head de la pagina para que todos los elementos de un mismo tipo como por ejemplo h5 se pudean estilar.
+Y en el archivo externo para cuando se va a utilizar para afectar a todas las paginas del sitio web.
+Interno en la misa pagina web, externo uando esta en otra página.
+
+Prioridad: 3. El css de la pagina externa, 2. el css de el head de la pagina, 1. El css en la propia etiqueta
+si pusieramos 
+
+color --> para dar color
+
+Colores RGB: es una mezcal entre rojo, verde y azul, mezclando se crean los colores. Los valores van del 0 al 255.
+text align --> para alinear el texto, al centro, a la izquierda, a la derecha...
+
+
+Id para poner un identificador unico, no su puede repetir
+
+Tenemos otro identificador que es class="", es como el id pero se puede repetir y asi se puede hacer servir apra mas de  un elemento.
+Para cuando enlazamos la calse hay que poner un . delante: .textoazul
+
+Selector universal, sirve para seleccionar todo, es este: *. si pusieramos un estilo azul se pondria todo el documento en azul.
+
+Hay prioridad tambien en el css, el que esta mas arriba es el que primero lee.
+
+## CSS
+Enlacar un css con el html:
+Ponemos un link en el html con el tipo de hoja de estilos que apunta a la ruta donde esta situada y  le decimos el tipo de datos que va a haber.
+<link rel="stylesheet" href="./css/estilos.css" type ="text/css">
+
+Selector de hijo:

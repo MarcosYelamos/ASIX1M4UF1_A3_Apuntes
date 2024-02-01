@@ -3,10 +3,11 @@
 Tercer repositorio de ASIX1 2324
 Confirmación de lo que sabemos
 
-## Primer cápitulo: MARKDOWN7 (SUBTITULO)
+## Primer capítulo: MARKDOWN7 (SUBTITULO)
 
 (#) Esto sirve para poner encabezados, hay 6 niveles como en HTML, al poner este encabezado te pone un enlace en el título.
-
+<br>
+<br>
 
 ### Poner texto en negrita y en cursiva (todas las formas):
 
@@ -38,7 +39,8 @@ Este texto esta en __*negrita y cursiva*__. __ * * __
     * Cuarto submenú
 + Quinta opción de lista desordenada
 + Sexta opción de lista desordenada
-
+<br>
+<br>
 Hay que dejar un espacio en blanco para que siga en otra linea 
 
 ``` 
@@ -51,10 +53,15 @@ Las tres tildes(```) sirven para encuadrar.
     </body>
 </html>
 ```
+<br>
 
 [Esto es un enlace](https://www.google.com/url?sa=i&url=https%3A%2F%2Finhispania.com%2Fes%2F15-formas-de-decir-si-sin-decir-si%2F&psig=AOvVaw19IUwh4EM0mAYLZhS421Tp&ust=1696059558183000&source=images&cd=vfe&opi=89978449&ved=0CA8QjRxqFwoTCOik266oz4EDFQAAAAAdAAAAABAD "Enlace a si")
+<br>
 
+Una foto:
 ![Esto es una foto](https://inhispania.com/wp-content/uploads/2021/05/1.jpg "Esto es un foton de si")
+
+Una tabla:
 
 |Primera Col.|Segnda Col.|3 Col|
 |---------------|:------------:|---------:|
@@ -68,8 +75,11 @@ Las tres tildes(```) sirven para encuadrar.
 -[X]Opción B
 
 -[ ]Opción C
+<br>
+<br>
 
-## Segundo cápitulo: HTML
+## Segundo capítulo: HTML
+
 ```
 Etiquetas de apertura y cierre.
 apertura --> <p>(contenido visible)</p> <-- cierre
@@ -87,13 +97,15 @@ Para añadir una imagen
 
 <br> --> para dejar un espacio en blanco entre lineas.
 ```
-
+<br>
 Hay que especificar el lenguaje que se va a utlizar cuando abrimos un nuevo archivo.
 
 Partes de un documento HTML
 Etiqueta por la cual le de
 
 html:5 para añadir al archivo las partes de un documento html.
+<br>
+<br>
 
 
 ```
@@ -173,6 +185,9 @@ Siempre comentar los codigos que escribamos.
 
 <strong> para poner en negrita u texto y <u> para subrayarlo.
 ```
+EN HTML existen muchas algunos elementos que hacen de conetenedores:
+Tenemos el div, section, article.
+Luegopodemos diivdir la pagina en header(encabezado), footer(pie de pagina)...
 
 <br>
 
@@ -200,18 +215,35 @@ para ir a un titulo y no cambiar a otra pagina hay que añadir anttes del la rut
 
 ```
 
+<br>
+<br>
 
-## Github y Pages
+## Tercer capítulo: GITHUB Y PAGES
 AL crear un repositorio en Github siempre hay que inicializarlo añadiendo el "READE.md".
 
-Para copiar un repositorio en local y poder trabajarlo debemos utilizar este comando:
+"IMPORTANTE": Debemos estar en un cmd para ejecutar los comandos y tener en cuenta la ruta de donde estamos, preferiblemente en la ruta donde se va a aetar e reposiorio o donde ya esta.
 
-"IMPORTANTE":
+__Para clonar el repositorio de github y poder trabaarlo en local:__
+```
+"git clone" (ruta del repositorio a clonar).
+```
+Para añadir toof lo que hemos modificado habra que ejecutar estos 3 comandos:
+```
+git add.
+git commit -m "(Nombre del commit)"
+git push origin main
+```
+Una vez ejecutados si fueramos al github veriamos que todo lo que hemos hecho en local se habría subido.
+<br>
+<br>
 
 #### PAGES
 Para hacer que un repositorio de github se transforme en pagina web iremos a configuración (settings), en el menú de la izquierda seleccionaremos pages.
 Seleccionamos la rama(Branch) Main y le damos a guardar (save). Al hacer esto y esperar un poco se nos creará un enlace a nuestra página.
-## HTML tabla
+<br>
+<br>
+
+## Continuación HTML: tabla
 Como se hace una tabla en HTML?
 
 Con la etiqueta ```<Table>```.
@@ -300,7 +332,7 @@ Quedaria tal que así:
 
 
 
-## Tercer capítulo: CSS
+## Cuarto capítulo: CSS
 
 Para organizar y estilar las paginas.
 Dos opciones:
@@ -336,12 +368,14 @@ h1,h2 {
 }
 
 
+<br>
 
 ## CSS
 Enlacar un css con el html:
 Ponemos un link en el html con el tipo de hoja de estilos que apunta a la ruta donde esta situada y  le decimos el tipo de datos que va a haber.
+```
 <link rel="stylesheet" href="./css/estilos.css" type ="text/css">
-
+```
 
 
 Selector de hijo: Podemos afectar a un elemento que esta dentro de otro, pero solo un nivel por debajo.
@@ -400,3 +434,61 @@ Por ejemplo:
             font-family: 'Edu TAS Beginner', cursive;
         }
     </style>
+<br>
+
+
+En CSS tenemos más cosas como:
+
+A las filas que seran divs que engloben avrias cosas les pondremos:
+```
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+```
+<br>
+Cuando hagamos columnas les pondremos:
+
+```
+.column-1{
+    width: 100%;
+    float: left;
+}
+```
+
+Podemos utilizar el flex por ejemplo para que una foto ocupe todo el ancho y el alto de la página y poner el texto en medio:
+```
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+```
+
+Siempre que utilizemos el display:flex pondremos a todo:
+
+```
+* {
+    box-sizing: border-box;
+}
+```
+
+## Quinto capítulo: RESPONSIVE
+
+EL responsive lo utlizamos para que cuando una página web hecha para ordenador sea abierta en un móvil se siga vieno bien y/o cambie el fromato para adecuarse mas al espacio que tiene.
+Resumiendo básicamente es para cambiar el formato de la página cuando se cambie de dispositivo, asi depediendo de si visitas la página en el movil o en el ordenador cambiará y se adecuará.
+
+Lo que se utiliza para esto es:
+```
+@media only screen and (max-width: 700px) {
+    .column-3{
+        width: 100%;
+    }
+    /* column-4 pasará de tener 25% a 50% */
+    .column-4{
+        width: 50%;
+    }
+}
+```
+Está diciendo que cuando la pantalla se haga más pequeña de 700px en vez de haber 3 columnas habrá 1 y en vez de 4 habra 2.

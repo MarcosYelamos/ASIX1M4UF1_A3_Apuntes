@@ -201,16 +201,31 @@ para ir a un titulo y no cambiar a otra pagina hay que añadir anttes del la rut
 ```
 
 
-## Pages
+## Github y Pages
+AL crear un repositorio en Github siempre hay que inicializarlo añadiendo el "READE.md".
 
-Para hacer que un repositorio de github se transforme en pagina web iremso a configuracion (settings) en el menu de la izqeuirda pages.
-Seleccionamos la rama(Branch) Main y le damos a guardar (save)
+Para copiar un repositorio en local y poder trabajarlo debemos utilizar este comando:
+
+"IMPORTANTE":
+
+#### PAGES
+Para hacer que un repositorio de github se transforme en pagina web iremos a configuración (settings), en el menú de la izquierda seleccionaremos pages.
+Seleccionamos la rama(Branch) Main y le damos a guardar (save). Al hacer esto y esperar un poco se nos creará un enlace a nuestra página.
 ## HTML tabla
 Como se hace una tabla en HTML?
 
-Con la etiqueta <Table>, <Thead>, tbody y <Tfoot>
+Con la etiqueta ```<Table>```.
 
-border es para ponerle borde a la tabla.
+En el interior de la etiqueta ```<table>``` tenemos estas etiquetas para estructura la tabla: ```<thead>```, ```<tbody>``` y ```<tfoot>```.
+Dentro de estas etiquetas debemos poner ```<tr>``` y dentro del ```<tr>``` pondremos ```<td>``` si queremso rellenar un campo de la tabla o ```<th>``` si queremos rellenar un encabezado o pie de la tabla.
+
+Aqui podemos ver un ejemplo:
+
+Codigo:
+
+__Border es para ponerle borde a la tabla.__
+
+```
 <table border="1"> 
         <thead>
             <tr>
@@ -244,6 +259,43 @@ border es para ponerle borde a la tabla.
             </tr>
         </tfoot>
 </table>
+```
+
+Quedaria tal que así:
+<table border="1"> 
+        <thead>
+            <tr>
+                <th>Puesto</th>
+                <th>Atleta</th>
+                <th>Tiempo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1r</td>
+                <td>Juan</td>
+                <td>2:00</td>
+            </tr>
+            <tr>
+                <td>2rd</td>
+                <td>Juan</td>
+                <td>3:00</td>
+            </tr>
+            <tr>
+                <td>3th</td>
+                <td>Pepe</td>
+                <td>4:00</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Puesto</th>
+                <th>Atleta</th>
+                <th>Tiempo</th>
+            </tr>
+        </tfoot>
+</table>
+
 <br>
 
 
@@ -294,11 +346,16 @@ Ponemos un link en el html con el tipo de hoja de estilos que apunta a la ruta d
 
 Selector de hijo: Podemos afectar a un elemento que esta dentro de otro, pero solo un nivel por debajo.
 
-        li > strong {
+    li > strong {
             color: blueviolet;
-        }
+    }
+<style>
+    li > strong {
+            color: blueviolet;
+    }
+</style>
 
-Esto de arriba afectaria a esto de abajo:
+El codigo de arriba afectaria al texto de debajo:
 <ol>
     <li><strong>200g</strong> de chocolate negro</li>
     <li><strong>150g</strong> de mantequilla</li>
@@ -312,19 +369,11 @@ Esto de arriba afectaria a esto de abajo:
 <br>
 <br>
 
-Por ejemplo esto:
 
-    p > strong {
-         color: blueviolet;
-    }
-
-
-
-No afectaria a esto:
-<p>Para preparar un delicioso <span><strong>pastel de chocolate</strong></span>, sigue estos pasos:</p>
 
 <br>
 <br>
+
 Selector de descendientes:
 Esto afectaria a cualquier strong que se encuentre dentro de un parrafo, da igual si es un hijo o no.
 
@@ -336,11 +385,15 @@ Esto afectaria a cualquier strong que se encuentre dentro de un parrafo, da igua
 
 Cambiar la letra del texto:
 Para cambiar la letra del texto iremos a la pagina web de google fonts y una vez hemos escojido la fuente que queremos deberemos copiar el link que se vera algo asi:
+```
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap" rel="stylesheet">
+```
 <br>
-Y una vez puesto el link habra que poner o en el head del html o en una hoja externa la fuente dentro de la etiqtea en la cual la queremos usar, por ejemplo:
+Y una vez puesto el link, habra que poner o en el head del html o en una hoja externa, la linia que ponga en el google fonts.
+
+Por ejemplo:
 
     <style>
         p {
